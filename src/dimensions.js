@@ -20,12 +20,11 @@ let i = 0;
     let set = new Set(thirdElementData.map((row) => row.time, 0));
     let times = Array.from(set);
 
-    console.log("time", times);
+    // console.log("time", times);
 
     let sorted = [];
     // Check status
     if (thirdElementData[i].status == "SAT") {
-      console.log("SAT");
       for (let i = 0; i < times.length; i++) {
         let solved = 0;
         for (let j = 0; j < thirdElementData.length; j++) {
@@ -39,25 +38,19 @@ let i = 0;
       }
     }
 
-    console.log("sorted", sorted);
+    // console.log("sorted", sorted);
 
     // Trier les temps par ordre croissant
     let sortedTimes = times.sort((a, b) => a - b);
-    console.log("sortedTimes", sortedTimes);
-
-    // Max time
-    let maxTime = Math.max(...sortedTimes);
-    console.log("maxTime", maxTime);
-
-    // Min time
-    let minTime = Math.min(...sortedTimes);
-    console.log("minTime", minTime);
+    // console.log("sortedTimes", sortedTimes);
 
     new Chart(document.getElementById("dimensions"), {
       type: "bar",
       barPercentage: 0.5,
       data: {
         labels: sortedTimes,
+        maxBarThickness: 8,
+        stepValue: 5,
         datasets: [
           {
             label: "Nombre de puzzles résolus par temps ",
@@ -106,7 +99,7 @@ let i = 0;
         responsive: true,
         plugins: {
           legend: {
-            position: "left",
+            position: "bottom",
             textDirection: "ltr",
             display: true,
             labels: {

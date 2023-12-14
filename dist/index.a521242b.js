@@ -605,14 +605,14 @@ let i = 0;
             let solvednumber = countsolved(names[i]);
             tableausolved.push(solvednumber);
         }
-        console.log("tableau solved", tableausolved);
+        // console.log("tableau solved", tableausolved);
         let sorted = tableausolved.slice().sort((a, b)=>a - b);
         let sortedNames = [];
         for(let i = 0; i < sorted.length; i++){
             let index = tableausolved.indexOf(sorted[i]);
             sortedNames.push(names[index]);
         }
-        console.log("sorted", sorted);
+        // console.log("sorted", sorted)
         new (0, _auto.Chart)(document.getElementById("acquisitions"), {
             type: "polarArea",
             data: {
