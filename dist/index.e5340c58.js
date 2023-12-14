@@ -620,7 +620,7 @@ let i = 0;
                 labels: sortedNames,
                 datasets: [
                     {
-                        label: "Temps de r\xe9solution moyen de tous les puzzles en seconde",
+                        label: "Moyenne des temps de r\xe9solution",
                         data: sorted,
                         backgroundColor: [
                             "rgba(255, 99, 132, 0.5)",
@@ -651,7 +651,7 @@ let i = 0;
                     },
                     title: {
                         display: true,
-                        text: "Temps de r\xe9solution moyen de tous les puzzles"
+                        text: "Temps de r\xe9solution moyen de chaque solveur "
                     }
                 }
             }

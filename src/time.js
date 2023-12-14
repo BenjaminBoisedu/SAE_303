@@ -60,7 +60,7 @@ let i = 0;
         labels: sortedNames,
         datasets: [
           {
-            label: "Temps de résolution moyen de tous les puzzles en seconde",
+            label: "Moyenne des temps de résolution",
             data: sorted,
             backgroundColor: [
               "rgba(255, 99, 132, 0.5)",
@@ -91,7 +91,7 @@ let i = 0;
           },
           title: {
             display: true,
-            text: "Temps de résolution moyen de tous les puzzles",
+            text: "Temps de résolution moyen de chaque solveur ",
           },
         },
       },
