@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Gantari';
+}
+
+header .logo {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 0 2rem 0 2rem;
+    height: 4rem;
+}
+
+header nav a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    padding: 1rem;
+}
+
+header .header_banner {
+    display: flex;
+    flex-direction: column;
+    background-image: url(./images/banner.jpeg);
+    backdrop-filter: blur(50px);
+    background-size: cover;
+    object-fit: cover;
+    height: 60vh;
+    padding: 5rem;
+}
+
+header .header_banner h1 {
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 5px;
+    font-size: 3rem;
+    color: #ffffff;
+    width: 700px;
+  }
+  
+  header .header_banner p {
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    color: #ffffff;
+    width: 700px;
+  }
+
+footer {
+    display: flex;
+    background-color: black; 
+    left: 0;
+    right: 0;
+    bottom: 0; 
+    padding: 2rem;
+}
+
+footer .section_contact {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+footer .section_contact span {
+    font-size: 1rem;
+    color: white;
+}
+
+footer .section_about {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+footer .section_about span {
+    font-size: 1rem;
+    color: white;
+}
